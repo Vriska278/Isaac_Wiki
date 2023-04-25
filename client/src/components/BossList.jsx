@@ -2,20 +2,21 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import BossRow from './BossRow'
 
 function BossList() {
-    const url = 'http://localhost:8000/api/bosses';
+    const [isLoaded, setIsLoaded] = useState(false)
     const [bosses, setBosses] = useState([]);
 
     useEffect(() => {
         axios
             .get('http://localhost:8000/api/bosses')
             .then((res) => {
-                console.log(res)
                 setBosses(res.data);
+                setIsLoaded(true);
             })
             .catch((err) => console.error(err));
-    }, [])
+    }, [isLoaded])
 
     return (
         <div className='card mb-3'>
@@ -34,11 +35,7 @@ function BossList() {
                     </thead>
                     <tbody>
                         {bosses.map((boss) => (
-                            <tr key={boss._id}>
-                                <td><Link to={`/bosses/${boss._id}`}>{boss.name}</Link></td>
-                                <td>{boss.health}</td>
-                                <td>{boss.floors}</td>
-                            </tr>
+                            <BossRow key={boss._id} boss={boss} />
                         ))}
                     </tbody>
                 </table>
