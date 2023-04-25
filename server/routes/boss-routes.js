@@ -20,4 +20,5 @@ router
     .put(updateOneBoss)
     .delete(deleteOneBoss);
 
+
 export default router;

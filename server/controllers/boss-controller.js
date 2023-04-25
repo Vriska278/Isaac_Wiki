@@ -44,6 +44,19 @@ async function updateOneBoss(req,res) {
         res.status(400).json(err);
     }
 }
+// async function trimBossLinks(req,res) {
+//     try {
+//         const bosses = await Boss.find();
+//         for(const boss of bosses){
+//             boss.spriteUrl = boss.spriteUrl.slice(0, boss.spriteUrl.length-34);
+//             boss.save();
+//         }
+//         res.send('worked')
+//     } catch (err) {
+//         console.error(err);
+//         res.status(400).json(err);
+//     }
+// }
 
 async function deleteOneBoss(req,res) {
     try {
