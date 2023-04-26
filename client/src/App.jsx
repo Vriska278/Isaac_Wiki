@@ -3,6 +3,7 @@ import BossList from './components/BossList';
 import Navbar from './components/Navbar';
 import BossDetails from './components/BossDetails';
 import AngelDevilDeals from './components/AngelDevilDeals'
+import TintedRocks from './components/TintedRocks';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path='/bosses' element={<BossList />} />
           <Route path='/bosses/:id' element={<BossDetails />} />
           <Route path='/deals' element={<AngelDevilDeals />} />
+          <Route path='/rocks' element={<TintedRocks />} />
         </Routes>
       </div>
     </>
