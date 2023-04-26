@@ -20,11 +20,11 @@ function Navbar() {
                                 Boss List
                             </NavLink>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li className="nav-item dropdown">
+                            <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Tips & Tricks
                             </a>
-                            <ul class="dropdown-menu bg-danger">
+                            <ul className="dropdown-menu bg-danger">
                                 <li>
                                     <Link className="dropdown-item" to="/deals">
                                         Angel/Devil Deals

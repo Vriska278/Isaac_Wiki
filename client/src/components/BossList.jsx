@@ -1,12 +1,14 @@
 import axios from 'axios';
-import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useEffect, useState, Fragment } from 'react';
+
 
 import BossRow from './BossRow'
+import ReactTabs from './ReactTabs';
 
 function BossList() {
-    const [isLoaded, setIsLoaded] = useState(false)
+    const [isLoaded, setIsLoaded] = useState(false);
     const [bosses, setBosses] = useState([]);
+    const [filter, setFilter] = useState("All");
 
     useEffect(() => {
         axios
@@ -18,32 +20,40 @@ function BossList() {
             .catch((err) => console.error(err));
     }, [isLoaded])
 
+    const filterBosses = () => {
+        if(filter == "All"){
+            return [...bosses]
+        }
+        else{
+            return bosses.filter((boss) => boss.chapter == filter);
+        }
+    }
+    const filteredBosses = filterBosses();
     return (
-        <div className='card mb-3'>
-            <div className="card-header d-flex justify-content-between">
-                button group here
+        <Fragment>
+            <ReactTabs setFilter={setFilter} />
+            <div className='card mb-3'>
+                <div className="card-header d-flex justify-content-between">
+                    <h1>Bosses</h1>
+                </div>
+                <div className="card-body pb-0">
+                    <table className="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Health</th>
+                                <th>Appears On</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {filteredBosses.map((boss) => (
+                                <BossRow key={boss._id} boss={boss} />
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div className="card-body">
-                <h1>Bosses</h1>
-                <table className="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Health</th>
-                            <th>Appears On</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {bosses.map((boss) => (
-                            <BossRow key={boss._id} boss={boss} />
-                        ))}
-                    </tbody>
-                </table>
-            </div>
-            <div className="card-footer d-flex justify-content-between">
-                button group here?
-            </div>
-        </div>
+        </Fragment>
     );
 }
 

@@ -19,7 +19,7 @@ function BossDetails () {
         boss&& <>
             <div className="container">
                 <div className="card shadow">
-                    <div className="card-header">
+                    <div className="card-header d-flex justify-content-center">
                         <h1>{boss.name}</h1>
                     </div>
                     <div className="card-body">
