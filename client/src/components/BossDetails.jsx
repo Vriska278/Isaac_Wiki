@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 function BossDetails () {
     const {id} = useParams();
@@ -30,6 +30,7 @@ function BossDetails () {
                         <li>Appears On Floors: {boss.floors}</li>
                         <li>Behavior: {boss.behavior}</li>
                     </ul>
+                    <div className="text-end"><Link to="/bosses"><button className="btn btn-danger">Home</button></Link></div>
                     </div>
                 </div>
             </div>

@@ -21,11 +21,11 @@ function BossList() {
     }, [isLoaded])
 
     const filterBosses = () => {
-        if(filter == "All"){
+        if(filter === "All"){
             return [...bosses]
         }
         else{
-            return bosses.filter((boss) => boss.chapter == filter);
+            return bosses.filter((boss) => boss.chapter === +filter);
         }
     }
     const filteredBosses = filterBosses();

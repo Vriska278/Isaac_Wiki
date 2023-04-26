@@ -21,9 +21,9 @@ function Navbar() {
                             </NavLink>
                         </li>
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Tips & Tricks
-                            </a>
+                            </Link>
                             <ul className="dropdown-menu bg-danger">
                                 <li>
                                     <Link className="dropdown-item" to="/deals">
