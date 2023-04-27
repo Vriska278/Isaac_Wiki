@@ -1,4 +1,3 @@
-
 function AngelDevilDeals() {
   return (
     <>
@@ -8,6 +7,17 @@ function AngelDevilDeals() {
             <h1> Angel & Devil Deals </h1>
           </div>
           <div className='card-body'>
+            <div className='d-flex flex-row'>
+              <img
+                src='https://steamuserimages-a.akamaihd.net/ugc/1709661497156341165/D56B3F824111285B5154D4475A92444408418AC6/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true'
+                alt='angel room'
+              />
+              <img
+                src='https://steamuserimages-a.akamaihd.net/ugc/1764828940392354264/20371CF772ACACB2C6946CDBBA4E9C850E51AD57/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true'
+                alt='devil room'
+                style={{ width: 600 }}
+              />
+            </div>
             <p>
               Devil rooms at the start of the every floor past the first floor
               have a 100 percent chance of spawning. One of those ways it to
