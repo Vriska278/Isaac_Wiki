@@ -5,6 +5,7 @@ import BossDetails from './components/BossDetails';
 import AngelDevilDeals from './components/AngelDevilDeals'
 import TintedRocks from './components/TintedRocks';
 import SecretRooms from './components/SecretRooms'
+import AdvancedMechanics from './components/AdvancedMechanics';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='/deals' element={<AngelDevilDeals />} />
           <Route path='/rocks' element={<TintedRocks />} />
           <Route path='/secretRooms' element={<SecretRooms />} />
+          <Route path='/mechanics' element={<AdvancedMechanics />} />
         </Routes>
       </div>
     </>

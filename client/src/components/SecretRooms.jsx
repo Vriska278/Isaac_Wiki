@@ -10,6 +10,7 @@ function SecretRooms() {
           </div>
           <div className='card-body'>
             <div className='d-flex justify-content-center'>
+              <h1>Secret Rooms</h1>
               <p>
                 Secret Rooms are rooms that are not normally visible on the map
                 and are usually accessed by bombing a wall leading to them.
@@ -24,19 +25,23 @@ function SecretRooms() {
                 lead to a dead-end, and is particularly likely to appear near
                 the Boss Room, as they are the second room type to be placed on
                 a map during Map Generation, and are therefore placed far away
-                from the room Isaac starts in. Ultra Secret Rooms are special
-                rooms that are not connected to any other room on the map
-                directly. They are not revealed by most mapping effects , The
-                Mind, etc, and can only be revealed on the map with Cracked Orb,
-                Book of Secrets wisps, and Rune Shard. They can be accessed
-                directly by opening Red Rooms adjacent to them using Red Key or
-                Red Key wisps, Crystal Key, Cracked Key, and Soul of Cain:
-                entering a Red Room next to the Ultra Secret room will reveal
-                its position and automatically open the doorway leading into it.
-                It can also be entered by teleporting to it using XVIII - The
-                Moon?; when teleported into, a pathway of Red Rooms back to the
-                rest of the level will be opened automatically. Ultra Secret
-                rooms contain items from the Ultra Secret Room item pool.
+                from the room Isaac starts in.
+              </p>
+              <h1> Ultra Secret Rooms </h1>
+              <p>
+                Ultra Secret Rooms are special rooms that are not connected to
+                any other room on the map directly. They are not revealed by
+                most mapping effects , The Mind, etc, and can only be revealed
+                on the map with Cracked Orb, Book of Secrets wisps, and Rune
+                Shard. They can be accessed directly by opening Red Rooms
+                adjacent to them using Red Key or Red Key wisps, Crystal Key,
+                Cracked Key, and Soul of Cain: entering a Red Room next to the
+                Ultra Secret room will reveal its position and automatically
+                open the doorway leading into it. It can also be entered by
+                teleporting to it using XVIII - The Moon?; when teleported into,
+                a pathway of Red Rooms back to the rest of the level will be
+                opened automatically. Ultra Secret rooms contain items from the
+                Ultra Secret Room item pool.
               </p>
             </div>
           </div>

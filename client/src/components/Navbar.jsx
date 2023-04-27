@@ -40,6 +40,11 @@ function Navbar() {
                                         Tinted Rocks
                                     </Link>
                                 </li>
+                                <li>
+                                    <Link className='dropdown-item' to='/mechanics'>
+                                        Advanced Mechanics
+                                    </Link>
+                                </li>
                             </ul>
                         </li>
                     </ul>
