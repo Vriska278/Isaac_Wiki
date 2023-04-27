@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 function AngelDevilDeals() {
   return (
     <>
@@ -39,6 +40,11 @@ function AngelDevilDeals() {
               spawned on a previous floor. The second condition is no devil deal
               made up until that point in the run.
             </p>
+            <div className='text-end'>
+              <Link to='/bosses'>
+                <button className='btn btn-danger text-end'>Home</button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

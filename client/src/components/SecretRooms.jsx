@@ -1,15 +1,22 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 function SecretRooms() {
   return (
     <>
-      <div className='container flex-row'>
+      <div className='container d-flex flex-row'>
         <div className='card shadow'>
-          <div className='card-header d-flex justify-content-center '>
+          <div className='card-header d-flex justify-content-center'>
             <h1> Secret Rooms </h1>
           </div>
-          <div className='card-body'>
+          <div className='card-body '>
             <div className='align-items-center'>
+              <div className='d-flex justify-content-center'>
+                <img
+                  src='https://steamuserimages-a.akamaihd.net/ugc/1801980500404007655/7D9CA5E9F49E92128805E6F8419F2ED8FE10646D/'
+                  alt='minimap'
+                  style={{ width: 500 }}
+                />
+              </div>
               <h2>Secret Rooms</h2>
               <p>
                 Secret Rooms are rooms that are not normally visible on the map
@@ -47,17 +54,18 @@ function SecretRooms() {
                 Ultra Secret Room item pool.
               </p>
               <p>
-                *** The white blocks are for special rooms, the red blocks are
-                red rooms that can potentially lead to to an ultra secret room.
+                *** The white blocks are places that cannot spawn any type of
+                secret room, the red blocks are red rooms that can potentially
+                lead to to an ultra secret room.
               </p>
+            </div>
+            <div className='text-end'>
+              <Link to='/bosses'>
+                <button className='btn btn-danger text-end'>Home</button>
+              </Link>
             </div>
           </div>
         </div>
-        <img
-          src='https://steamuserimages-a.akamaihd.net/ugc/1801980500404007655/7D9CA5E9F49E92128805E6F8419F2ED8FE10646D/'
-          alt='minimap'
-          style={{ width: 500 }}
-        />
       </div>
     </>
   );
