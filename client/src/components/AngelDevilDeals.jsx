@@ -8,10 +8,11 @@ function AngelDevilDeals() {
             <h1> Angel & Devil Deals </h1>
           </div>
           <div className='card-body'>
-            <div className='d-flex flex-row'>
+            <div className='d-flex mb-3 justify-content-between'>
               <img
                 src='https://steamuserimages-a.akamaihd.net/ugc/1709661497156341165/D56B3F824111285B5154D4475A92444408418AC6/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true'
                 alt='angel room'
+                style={{ width: 600 }}
               />
               <img
                 src='https://steamuserimages-a.akamaihd.net/ugc/1764828940392354264/20371CF772ACACB2C6946CDBBA4E9C850E51AD57/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true'

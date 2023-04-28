@@ -13,7 +13,7 @@ function AdvancedMechanics() {
               <p>
                 <ul>
                   <li>
-                    <a href='https://static.wikia.nocookie.net/bindingofisaacre_gamepedia/images/6/66/Boss_Rush_1.png/revision/latest/scale-to-width-down/1200?cb=20210821222328'>
+                    <a href='https://static.wikia.nocookie.net/bindingofisaacre_gamepedia/images/6/66/Boss_Rush_1.png'>
                       If you beat mom under 20 mins you get to go to a boss
                       rush, in which you get to choose one of four items before
                       facing 15 waves of bosses with two bosses per wave.

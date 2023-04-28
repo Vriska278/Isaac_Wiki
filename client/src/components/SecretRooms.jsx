@@ -10,33 +10,35 @@ function SecretRooms() {
           </div>
           <div className='card-body '>
             <div className='align-items-center'>
-              <div className='d-flex justify-content-center'>
+              <div className='d-flex justify-content-center mb-3'>
                 <img
                   src='https://steamuserimages-a.akamaihd.net/ugc/1801980500404007655/7D9CA5E9F49E92128805E6F8419F2ED8FE10646D/'
                   alt='minimap'
                   style={{ width: 500 }}
                 />
               </div>
-              <h2>Secret Rooms</h2>
-              <p>
-                Secret Rooms are rooms that are not normally visible on the map
-                and are usually accessed by bombing a wall leading to them.
-                Regular Secret Rooms are usually located next to 3 or 4 rooms.
-                Super Secret Rooms can only be next to one room. They are placed
-                on one of the dead ends generated on the map.
-              </p>
-              <p>
-                Secret rooms are marked with a question mark on the map. Very
-                rarely, the regular Secret Room may also be located next to only
-                one room. Entrances to Secret Rooms will never have rocks or
-                gaps in the way. Super Secret Rooms are only located next to one
-                other room. Super Secret Rooms are most likely to be found
-                either at the end of a series of rooms that lead to a dead-end,
-                and is particularly likely to appear near the Boss Room, as they
-                are the second room type to be placed on a map during Map
-                Generation, and are therefore placed far away from the room
-                Isaac starts in.
-              </p>
+              <div className="border-bottom mb-2">
+                <h2>Secret Rooms</h2>
+                <p>
+                  Secret Rooms are rooms that are not normally visible on the map
+                  and are usually accessed by bombing a wall leading to them.
+                  Regular Secret Rooms are usually located next to 3 or 4 rooms.
+                  Super Secret Rooms can only be next to one room. They are placed
+                  on one of the dead ends generated on the map.
+                </p>
+                <p>
+                  Secret rooms are marked with a question mark on the map. Very
+                  rarely, the regular Secret Room may also be located next to only
+                  one room. Entrances to Secret Rooms will never have rocks or
+                  gaps in the way. Super Secret Rooms are only located next to one
+                  other room. Super Secret Rooms are most likely to be found
+                  either at the end of a series of rooms that lead to a dead-end,
+                  and is particularly likely to appear near the Boss Room, as they
+                  are the second room type to be placed on a map during Map
+                  Generation, and are therefore placed far away from the room
+                  Isaac starts in.
+                </p>
+              </div>
               <h2> Ultra Secret Rooms </h2>
               <p>
                 Ultra Secret Rooms are special rooms that are not connected to
